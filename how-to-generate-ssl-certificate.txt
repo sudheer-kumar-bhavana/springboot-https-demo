@@ -3,3 +3,6 @@ keytool -genkeypair -keyalg rsa -alias https-demo -keypass pkpassword -validity 
 
 -- To check certificate in the keystore created
 keytool -list -v -storepass kspassword -keystore https-demo.jks
+
+-- To Export certificate from keystore
+keytool -export -alias https-demo -keystore https-demo.jks -rfc -file public.cert
