@@ -5,7 +5,9 @@
 #### Step 1
 Create a self signed certificate by using a following command.
 
+```
 keytool -genkeypair -keyalg rsa -alias https-demo -keypass pkpassword -validity 365 -storepass kspassword -keystore https-demo.jks
+```
 
 copy https-demo.jks onto resources folder.
 
