@@ -1,0 +1,5 @@
+-- To create a self signed certificate
+keytool -genkeypair -keyalg rsa -alias https-demo -keypass pkpassword -validity 365 -storepass kspassword -keystore https-demo.jks
+
+-- To check certificate in the keystore created
+keytool -list -v -storepass kspassword -keystore https-demo.jks
